@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryTableViewCell" rowHeight="203" id="KGk-i7-Jjw" customClass="CountryTableViewCell" customModule="FlatStackTestTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="203"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="203"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="fhY-FS-h91">
+                        <rect key="frame" x="16" y="17" width="60" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="SPh-aB-lT7"/>
+                            <constraint firstAttribute="height" constant="45" id="VNX-Vv-ViQ"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ufm-Y4-cYj">
+                        <rect key="frame" x="84" y="22" width="195" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Argentina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7c-EL-zak">
+                                <rect key="frame" x="0.0" y="0.0" width="195" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buenos Aires" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g7-So-gH3">
+                                <rect key="frame" x="0.0" y="20.5" width="195" height="14.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="x5E-Sa-efU">
+                        <rect key="frame" x="289" y="32" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="F0n-ro-0pd"/>
+                            <constraint firstAttribute="width" constant="15" id="OyR-Vv-dEZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NP5-H9-3Ht">
+                        <rect key="frame" x="16" y="71" width="288" height="121"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fhY-FS-h91" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="0JZ-Ty-CVj"/>
+                    <constraint firstAttribute="bottom" secondItem="NP5-H9-3Ht" secondAttribute="bottom" constant="11" id="6yt-CC-X6Y"/>
+                    <constraint firstAttribute="trailing" secondItem="NP5-H9-3Ht" secondAttribute="trailing" constant="16" id="EP3-w7-Yjb"/>
+                    <constraint firstItem="x5E-Sa-efU" firstAttribute="centerY" secondItem="fhY-FS-h91" secondAttribute="centerY" id="QF9-L4-Yth"/>
+                    <constraint firstItem="fhY-FS-h91" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="Qld-eO-Ya0"/>
+                    <constraint firstItem="NP5-H9-3Ht" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="auT-YR-SVT"/>
+                    <constraint firstItem="x5E-Sa-efU" firstAttribute="leading" secondItem="Ufm-Y4-cYj" secondAttribute="trailing" constant="10" id="d01-UK-2eC"/>
+                    <constraint firstAttribute="trailing" secondItem="x5E-Sa-efU" secondAttribute="trailing" constant="16" id="fcq-4p-vrV"/>
+                    <constraint firstItem="Ufm-Y4-cYj" firstAttribute="leading" secondItem="fhY-FS-h91" secondAttribute="trailing" constant="8" id="rs5-XS-ooF"/>
+                    <constraint firstItem="NP5-H9-3Ht" firstAttribute="top" secondItem="fhY-FS-h91" secondAttribute="bottom" constant="9" id="vlT-Qi-k6v"/>
+                    <constraint firstItem="Ufm-Y4-cYj" firstAttribute="centerY" secondItem="fhY-FS-h91" secondAttribute="centerY" id="wrX-60-09V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="countryCapitalLabel" destination="6g7-So-gH3" id="CXw-Oz-LOv"/>
+                <outlet property="countryNameLabel" destination="v7c-EL-zak" id="sa5-SW-a6W"/>
+                <outlet property="descriptionLabel" destination="NP5-H9-3Ht" id="aIl-GK-1vJ"/>
+                <outlet property="flagImageView" destination="fhY-FS-h91" id="frn-vH-LDF"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="161.04910714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow" width="123" height="200"/>
+        <image name="imagePlaceholder" width="1920" height="1080"/>
+    </resources>
+</document>
